@@ -132,7 +132,9 @@ table {
 }
 html,
 body {
+  font-size: 10px;
   height: 100%;
+  margin: 0 5%;
 }
 header nav {
   display: flex;
@@ -142,14 +144,22 @@ header nav a {
   color: black;
   text-decoration: none;
   padding: 15px;
+  font-size: 4.5rem;
 }
 .main-content {
-  border: 1px solid blue;
   display: flex;
+  flex-flow: column;
 }
 .main-content img {
-  max-width: 60%;
-  height: 600px;
-  margin: 0 20px;
-  border: 1px solid black;
+  max-width: 30%;
+  height: 500px;
+  margin: 5% 0;
+}
+.main-content h1 {
+  font-size: 4.5rem;
+}
+.main-content h2 {
+  font-size: 3rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
 }
