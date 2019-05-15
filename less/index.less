@@ -142,18 +142,31 @@ body {
 }
 //new code
 // Variables
-@main-size: 4.5rem;
+//@main-size: 2rem;
 
 // Mixins
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0.5rem 0;
+}
 header {
   nav {
     display: flex;
     justify-content: flex-end;
+    margin: 25px 0;
     a {
+      font-size: 2rem;
       color: black;
       text-decoration: none;
-      padding: 15px;
-      font-size: @main-size;
+      padding: 0 0.5rem;
     }
   }
 }
@@ -161,19 +174,47 @@ header {
   //border: 1px solid blue;
   display: flex;
   flex-flow: column;
+  padding: 50px 15%;
+  margin: 0 auto 50px auto;
+  background-color: lightcoral;
 
   img {
-    max-width: 30%;
-    height: 500px;
-    margin: 5% 0;
+    max-width: 40%;
+    height: 400px;
+    margin: 2% 0;
     //border: 1px solid black;
   }
   h1 {
-    font-size: @main-size;
+    font-size: 6rem;
   }
   h2 {
-    font-size: 3rem;
-    padding: 1rem 0;
+    //padding: 1rem 0;
+    font-size: 4rem;
     border-bottom: 1px solid black;
   }
+  p {
+    font-size: 1.5rem;
+  }
+  button {
+    background-color: lightgray;
+    border: none;
+    color: black;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 2rem;
+    width: 20%;
+    height: 50px;
+  }
+}
+.left-block {
+  border: 1px solid black;
+}
+.right-block {
+  border: 1px solid black;
+}
+.work-history {
+  border: 1px solid black;
+}
+footer {
+  border: 1px solid black;
 }
